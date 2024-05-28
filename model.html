@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- navbar start here -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">SUZUKI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="model.html">MODELS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">REGISTRATION</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  more
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">colour</a></li>
+                  <li><a class="dropdown-item" href="#">survice</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">mileage</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end here -->
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            SIFT
+            <div class="card" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">The new “Swift” is designed with the concept of “Energetic & Light – A refined smart compact that transforms everyday travel into play”. In addition to the design and driving performance cultivated in successive Swift models, it now offers enhanced safety features and convenience. This adds a new value of “enjoying daily life with cars” to the attractiveness of the Swift’s design and driving performance, making it an evolved new compact hatchback model.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            JIBSY
+            <div class="card" style="width: 18rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Suzuki_Samurai_.jpg/800px-Suzuki_Samurai_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Maruti Suzuki has pulled off the production of its famous SUV car - Gypsy in India. The SUV is famous for its looks, strong engine and 4x4 drive. The 33-year-old Gypsy was Maruti's third car which entered the market after Maruti 800 and Omni. Gypsy production started in late 1985 and the company has now released an official notification about the discontinuation of the model</p>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            FRONX
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.globalsuzuki.com/globalnews/2023/img/0112_02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">The Fronx is an attractive and spacious crossover based on the Baleno, boasting a long list of features. Its engines are efficient and sufficiently powerful, available with both AMT and torque converter options. The ride is accomplished, with adequate ground clearance.
+
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            AULTO
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.autox.com/uploads/cars/2019/05/maruti-suzuki-alto-23-Apr-2019.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Maruti Alto 800 LXi (O) CNG [2019-2020] is the top model in the Alto 800 lineup and the price of Alto 800 top model is Rs. 4.58 Lakh. It gives a mileage of 22.05 km/kg. Maruti Alto 800 LXi (O) CNG [2019-2020] is available in Manual transmission and offered in 6 colours.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            BELANO
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKoqTinvzEDCEL32r_DEs1NyXGDXvlMJ-vCpu3ZteUZz45p2eLw5F-iLZ7K_lVI0U28RE&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">The Maruti Suzuki Baleno [2019-2022] Price in Baharagora starts from Rs. 6.66 Lakh and goes upto Rs. 10.20 Lakh. Baleno [2019-2022] is a Hatchback, offered with a choice of 1197 cc, 998 cc Petrol and 1248 cc Diesel engine options. The Baleno [2019-2022] on road price in Baharagora for 1197 cc</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            IGNIS
+            <div class="card" style="width: 18rem;">
+                <img src="https://financialexpresswpcontent.s3.amazonaws.com/uploads/2018/01/Ignis-new.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">The Maruti Ignis comes across as an offbeat option in the crowded hatchback segment. It's based on the same platform as the incredibly popular Swift though it's not as big on the outside and spacious inside. Combining sharp handling, funky interiors and an eager powertrain with eccentric looks, </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+    
+</body>
+</html>
